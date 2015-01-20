@@ -11,16 +11,20 @@ void initgr(void) /* BGI初始化 */
   initgraph(&gd, &gm, "");
 }
 
+void test();
+
 int main(void)
 {
   initgr(); /* BGI初始化 */
 
-
-  line(25, 25, 220, 220);
-  circle(100, 100, 50);
-
+  test();
 
   getch(); /* 暂停一下，看看前面绘图代码的运行结果 */
   closegr(); /* 恢复TEXT屏幕模式 */
   return 0;
+}
+
+void test()
+{
+	int i;
 }
